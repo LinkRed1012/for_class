@@ -1,0 +1,26 @@
+<html> 
+<head>   
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>My Document</title>   
+    <script type="text/javascript">   
+    function change() {     
+        var header = document.getElementById("quiz1");
+        header.innerHTML = "CSIE@CGU";     
+        var para = document.getElementById("quiz1_1");     
+        para.innerHTML = "怎麼那麼棒！！.";  
+    }  
+    function myFunction() {   
+        var x = document.createElement("STYLE");   
+        var t = document.createTextNode("body {font: 20px verdana;}");   
+        x.appendChild(t);   
+        document.head.appendChild(x); } 
+        document.getElementById("myBtn").addEventListener("click", function() {
+                document.getElementById("demo").innerHTML = "Hello World"; })
+     </script> 
+</head> 
+<body>   
+    <input type="button" value="Change this document." onclick="change()">   
+    <h1 id = "quiz1">CGU</h1>   
+    <p id  = "quiz1_1">好棒棒</p> 
+</body> 
+</html>
