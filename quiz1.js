@@ -1,13 +1,10 @@
   
 function change() {     
-    var header = document.getElementById("quiz1");
-    header.innerHTML = "CSIE@CGU";     
-    var para = document.getElementById("quiz1_1");     
-    para.innerHTML = "怎麼那麼棒！！.";  
+    $("#quiz1").html("CSIE@CGU");
+    $("#quiz1_1").html("怎麼那麼棒") 
 }  
-function myFunction() {   
-    var but = document.createElement("BUTTON");   
-    but.innerHTML = "Change this document." 
-    document.body.appendChild(but); 
-    but.addEventListener("click",change)
+function new_button() {   
+    var but="<button id='change'>Change this document</button>";
+    $("body").append(but);
+    $("#change").click(change);
 }
