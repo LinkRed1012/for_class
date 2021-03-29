@@ -10,16 +10,15 @@
         para.innerHTML = "怎麼那麼棒！！.";  
     }  
     function myFunction() {   
-        var x = document.createElement("STYLE");   
-        var t = document.createTextNode("body {font: 20px verdana;}");   
-        x.appendChild(t);   
-        document.head.appendChild(x); } 
-        document.getElementById("myBtn").addEventListener("click", function() {
-                document.getElementById("demo").innerHTML = "Hello World"; })
+        var but = document.createElement("BUTTON");   
+        but.innerHTML = "Change this document." 
+        document.body.appendChild(but); 
+        but.addEventListener("click",change)
+    }
      </script> 
 </head> 
 <body>   
-    <input type="button" value="Change this document." onclick="change()">   
+    <button type = "BUTTON" onclick="myFunction()">Try it</button>   
     <h1 id = "quiz1">CGU</h1>   
     <p id  = "quiz1_1">好棒棒</p> 
 </body> 
