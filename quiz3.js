@@ -3,7 +3,7 @@ var dataUrl = "https://data.taipei/opendata/datalist/apiAccess?scope=resourceAqu
 
 var data = $.getJSON(dataUrl);
 data.done (function(msg){
-    $.each(msg.result.results,function(i,item){
+    $.each(msg.result.results,function(i,item){ // for loop 
         $("#contain").html();
         $("#contain").append($("<h2/>").text(item.A_Name_Ch));
         $("#contain").append($("<h3/>").text(item.A_Behavior));
